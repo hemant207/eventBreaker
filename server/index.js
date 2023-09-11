@@ -33,8 +33,7 @@ app.use('/admin',adminRouter);
 app.get('/',(req,res)=>{
     console.log(req.socket.remoteAddress);
     console.log(req.ip);
-  res.send();
-    res.send({"Hello from the server":"your IP is: " + req.ip})
+    res.send({"Hello from the server":"eventbreaker"})
 })
 
 app.post('/create-checkout-session', async (req, res) => {
@@ -60,8 +59,8 @@ app.post('/create-checkout-session', async (req, res) => {
               },
             ],
             mode: 'payment',
-            success_url: `http://localhost:5173/success`,
-            cancel_url: `http://localhost:5173/canceled`
+            success_url: `https://eventbreaker.vercel.app/success`,
+            cancel_url: `https://eventbreaker.vercel.app/canceled`
           });
           res.json({"url":session.url});
        
