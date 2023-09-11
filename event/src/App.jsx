@@ -35,8 +35,8 @@ function App() {
     <Init/>
     <Header/>
         <Routes>
-          <Route path='/' element={<HomePage/>} />
-          <Route path='https://eventbreaker.vercel.app//tickets' element={<TicketPage/>}/>
+          <Route path='https://eventbreaker.vercel.app/' element={<HomePage/>} />
+          <Route path='https://eventbreaker.vercel.app/tickets' element={<TicketPage/>}/>
           <Route path='https://eventbreaker.vercel.app/admin' element={<AdminHomePage/>}/>
           <Route path='https://eventbreaker.vercel.app/admin/login' element={<LoginPage/>}/>
           <Route path='https://eventbreaker.vercel.app/admin/signup' element={<SignupPage/>}/>
