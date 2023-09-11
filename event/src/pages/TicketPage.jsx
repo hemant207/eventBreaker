@@ -12,7 +12,7 @@ function TicketPage() {
     
 
   useEffect(()=>{
-      axios.get('http://localhost:3000/events/').then((res)=>{
+      axios.get('https://server-eventbreaker.onrender.com/events/').then((res)=>{
           //console.log(res.data);
           setEvents(res.data.events);
       })

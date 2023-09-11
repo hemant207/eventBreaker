@@ -14,7 +14,7 @@ function UpdateEvents({events}) {
         },
       };
     const HandleDeleteEvents = (id) =>{
-        axios.delete(`http://localhost:3000/admin/event/${id}`,config).then((res)=>{
+        axios.delete(`https://server-eventbreaker.onrender.com/admin/event/${id}`,config).then((res)=>{
             console.log(res.data);
             location.reload();
         })

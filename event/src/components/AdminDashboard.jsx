@@ -25,7 +25,7 @@ function AdminDashboard() {
           Authorization:token
         }
       }
-      axios.get('http://localhost:3000/admin/events/',config) .then((res) => {
+      axios.get('https://server-eventbreaker.onrender.com/admin/events/',config) .then((res) => {
         console.log(res.data);
         setEvents(res.data.events);
   

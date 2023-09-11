@@ -14,7 +14,7 @@ function AdminTabPanel() {
 
   const HandleLogout = () => {
     
-    axios.get("http://localhost:3000/admin/logout").then((res)=>{
+    axios.get("https://server-eventbreaker.onrender.com/admin/logout").then((res)=>{
       console.log(res.data);
     })
     setUserInfo('');

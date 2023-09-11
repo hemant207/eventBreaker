@@ -65,7 +65,7 @@ function Init(){
  
 
   useEffect(()=>{
-    axios.get('http://localhost:3000/admin/me',{headers:{Authorization:token}}).then((res)=>{
+    axios.get('https://server-eventbreaker.onrender.com/admin/me',{headers:{Authorization:token}}).then((res)=>{
       console.log(res.data);
       setUserInfo(res.data.admin_data);
       setToken(token);

@@ -17,7 +17,7 @@ function Signup() {
             password
         }
 
-        axios.post('http://localhost:3000/admin/signup',data).then((res)=>{
+        axios.post('https://server-eventbreaker.onrender.com/admin/signup',data).then((res)=>{
             console.log(res.data);
             nav('/admin/login')
         })

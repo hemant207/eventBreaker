@@ -25,7 +25,7 @@ function Login() {
         }
 
         try {
-            axios.post('http://localhost:3000/admin/login',data).then((res)=>{
+            axios.post('https://server-eventbreaker.onrender.com/admin/login',data).then((res)=>{
             console.log(res.data);
             setMsg(res.data.message);
 
