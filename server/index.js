@@ -60,8 +60,8 @@ app.post('/create-checkout-session', async (req, res) => {
               },
             ],
             mode: 'payment',
-            success_url: `http://localhost:5173/success`,
-            cancel_url: `http://localhost:5173/canceled`
+            success_url: `https://eventbreaker.vercel.app/success`,
+            cancel_url: `https://eventbreaker.vercel.app/canceled`
           });
           res.json({"url":session.url});
        
