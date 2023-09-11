@@ -31,7 +31,10 @@ app.use('/events',eventRouter);
 app.use('/admin',adminRouter);
 
 app.get('/',(req,res)=>{
-    res.send("Hello from the server")
+    console.log(req.socket.remoteAddress);
+    console.log(req.ip);
+  res.send();
+    res.send({"Hello from the server":"your IP is: " + req.ip})
 })
 
 app.post('/create-checkout-session', async (req, res) => {
