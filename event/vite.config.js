@@ -6,5 +6,5 @@ export default defineConfig({
   css:{
     modules:true,
   },
-  plugins: [react()],
+  plugins: [react(),tailwindcss()],
 })
