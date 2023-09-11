@@ -10,7 +10,7 @@ function Tickets({events}) {
   const nav = useNavigate();
 
   const HandleCheckout = (id) =>{
-     axios.post('http://localhost:3000/create-checkout-session',{id:id}).then((res)=>{
+     axios.post('https://server-eventbreaker.onrender.com/create-checkout-session',{id:id}).then((res)=>{
       console.log(res.data.url);
       location.replace(res.data.url)
     })

@@ -39,7 +39,7 @@ function AddEvents() {
       };
     
       try {
-        const res = await axios('http://localhost:3000/admin/addevent', config);
+        const res = await axios('https://server-eventbreaker.onrender.com/admin/addevent', config);
         console.log(res.data);
         nav('/admin/home')
         // Handle the response as needed

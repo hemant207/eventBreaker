@@ -1,6 +1,5 @@
 import './App.css'
 import Footer from './components/Footer'
-import Header from './components/header'
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import TicketPage from './pages/TicketPage'
@@ -17,7 +16,7 @@ import { useEffect } from 'react'
 import userState from './value/atom/user'
 import token_data from './value/atom/token'
 import AdminHomePage from './pages/AdminHomePage'
-
+import Header from './components/Header'
 import SucessPayment from './pages/SucessPayment'
 import CanclePayment from './pages/CanclePayment'
 
@@ -31,8 +30,8 @@ function App() {
      <LocalizationProvider dateAdapter={AdapterDayjs}>
   
     <Router>
-    <Header/>
     <Init/>
+    <Header/>
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/tickets' element={<TicketPage/>}/>
