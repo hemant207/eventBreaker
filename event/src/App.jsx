@@ -36,15 +36,15 @@ function App() {
     <Header/>
         <Routes>
           <Route path='/' element={<HomePage/>} />
-          <Route path='/tickets' element={<TicketPage/>}/>
+          <Route path='https://eventbreaker.vercel.app//tickets' element={<TicketPage/>}/>
           <Route path='https://eventbreaker.vercel.app/admin' element={<AdminHomePage/>}/>
-          <Route path='/admin/login' element={<LoginPage/>}/>
-          <Route path='/admin/signup' element={<SignupPage/>}/>
-          <Route path='/admin/addevents' element={<AddEvents/>}/>
-          <Route path='/admin/home' element={<AdminDashboard/>}/>
-          <Route path='/admin/profile' element={<AdminProfile/>}/>
-          <Route path='/success' element={<SucessPayment/>}/>
-          <Route path='/cancle' element={<CanclePayment/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin/login' element={<LoginPage/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin/signup' element={<SignupPage/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin/addevents' element={<AddEvents/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin/home' element={<AdminDashboard/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin/profile' element={<AdminProfile/>}/>
+          <Route path='https://eventbreaker.vercel.app/success' element={<SucessPayment/>}/>
+          <Route path='https://eventbreaker.vercel.app/cancle' element={<CanclePayment/>}/>
         </Routes>
       </Router>
       <Footer/>
