@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.login{
+  font-family: 'Roboto Mono', monospace;
+  }
+.login h1{
+    font-size:  60px;
+}
+
+.buy_button:hover{
+  background-color: black;
+  color: white;
+}
