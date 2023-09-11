@@ -33,7 +33,6 @@ app.use('/admin',adminRouter);
 app.get('/',(req,res)=>{
     console.log(req.socket.remoteAddress);
     console.log(req.ip);
-  res.send();
     res.send({"Hello from the server":"your IP is: " + req.ip})
 })
 
