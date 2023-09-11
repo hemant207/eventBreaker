@@ -20,6 +20,8 @@ import Header from './components/Header'
 import SucessPayment from './pages/SucessPayment'
 import CanclePayment from './pages/CanclePayment'
 
+
+
 function App() {
 
  // const stripePromise = loadStripe('pk_test_51NoTOxC3DLIb7WypNd57rc27o7XLsog5GDU9QR2eOmxyjXZc0PP6fWWwXEz5X1EZnQEoLSFsNokc6A8YXOyELtY100BkuCeOV5'); // Replace with your actual publishable key
@@ -35,7 +37,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/tickets' element={<TicketPage/>}/>
-          <Route path='/admin' element={<AdminHomePage/>}/>
+          <Route path='https://eventbreaker.vercel.app/admin' element={<AdminHomePage/>}/>
           <Route path='/admin/login' element={<LoginPage/>}/>
           <Route path='/admin/signup' element={<SignupPage/>}/>
           <Route path='/admin/addevents' element={<AddEvents/>}/>
@@ -43,7 +45,6 @@ function App() {
           <Route path='/admin/profile' element={<AdminProfile/>}/>
           <Route path='/success' element={<SucessPayment/>}/>
           <Route path='/cancle' element={<CanclePayment/>}/>
-
         </Routes>
       </Router>
       <Footer/>
