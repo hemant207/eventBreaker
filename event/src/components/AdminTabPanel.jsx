@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Tab, Typography } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import {  useSetRecoilState } from 'recoil'
 import userState from '../value/atom/user'
 import token_data from '../value/atom/token'
@@ -12,6 +12,8 @@ function AdminTabPanel() {
   const setUserInfo = useSetRecoilState(userState);
   const setToken = useSetRecoilState(token_data);
 
+  const nav = useNavigate();
+
   const HandleLogout = () => {
     
     axios.get("https://server-eventbreaker.onrender.com/admin/logout").then((res)=>{
@@ -19,7 +21,7 @@ function AdminTabPanel() {
     })
     setUserInfo('');
     setToken('');
-    window.location = '/admin/login';
+    nav('/');
     
   }
   return (

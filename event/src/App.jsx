@@ -19,6 +19,7 @@ import AdminHomePage from './pages/AdminHomePage'
 import Header from './components/Header'
 import SucessPayment from './pages/SucessPayment'
 import CanclePayment from './pages/CanclePayment'
+import NotFoundPage from './pages/NotFoundPage'
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='/admin/profile' element={<AdminProfile/>}/>
           <Route path='/success' element={<SucessPayment/>}/>
           <Route path='/cancle' element={<CanclePayment/>}/>
+          <Route path='/*' element={<NotFoundPage/>}/>
         </Routes>
       </Router>
       <Footer/>
