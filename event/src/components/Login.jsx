@@ -33,7 +33,7 @@ function Login() {
                 document.cookie = `token=Bearer ${res.data.admin}`;
                 setUserInfo(res.data.admin_data);
                 setToken(document.cookie.split("=")[1]);
-                window.location.replace('/admin/home');
+                nav('/admin/home');
             }else{
                 setSnackOpen(true);
                 const msgBox = document.getElementById("showmsg");
