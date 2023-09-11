@@ -33,6 +33,14 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  
 }
 
+.admin_btn{
+  position: absolute;
+  bottom:8rem;
+}
 
+.header_logo, .menu_btn{
+cursor: pointer;
+}

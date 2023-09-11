@@ -1,4 +1,4 @@
-import { Menu } from '@mui/icons-material';
+import { Flag, Menu } from '@mui/icons-material';
 import React, { useState } from 'react'
 import '../App.css'
 import {  useNavigate } from 'react-router-dom';
@@ -45,16 +45,17 @@ function Header() {
            
 
             <div className='header_menu p-3'>
-                <div onClick={()=>{
+                <div onClick={async ()=>{
                     console.log(open)
                     setOpen(!open);
-                    showDrawer(open);                    
+                    showDrawer(open);  
+                  
                 }}>
-                    {open?<h1 className='text-2xl'>🗙</h1>:<Menu fontSize="large"/>}</div>
+                    {open?<h1 className='menu_btn relative text-2xl'>🗙</h1>:<Menu className='menu_btn' fontSize="large"/>}</div>
                     <div id="mySidenav" className="sidenav text-amber-500">
                         <button onClick={()=>{nav('/')}}>Home</button>
                         <button onClick={()=>{nav('/tickets')}}>Event Tickets</button>
-                        
+                        <button className="admin_btn" onClick={()=>{nav('/admin')}}>Admin Portle</button>
                     </div>
             </div>
         </div>
